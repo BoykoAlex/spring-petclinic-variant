@@ -1,10 +1,8 @@
 package org.springframework.samples.petclinic.deviations;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile("webflux")
 public class VetsRouter {
 
 //	@Bean
