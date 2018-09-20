@@ -197,7 +197,7 @@
         <groupId>ro.isdc.wro4j</groupId>
         <artifactId>wro4j-maven-plugin</artifactId>
         <version>${wro4j.version}</version>
-        <executions>
+<!--         <executions>
           <execution>
             <phase>generate-resources</phase>
             <goals>
@@ -205,7 +205,7 @@
             </goals>
           </execution>
         </executions>
-        <configuration>
+ -->        <configuration>
           <wroManagerFactory>ro.isdc.wro.maven.plugin.manager.factory.ConfigurableWroManagerFactory</wroManagerFactory>
           <cssDestinationFolder>${project.build.directory}/classes/static/resources/css</cssDestinationFolder>
           <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
