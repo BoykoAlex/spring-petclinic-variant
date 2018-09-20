@@ -1,0 +1,4 @@
+---
+applications:
+- name: petclinic-s1p
+  memory: 1024M

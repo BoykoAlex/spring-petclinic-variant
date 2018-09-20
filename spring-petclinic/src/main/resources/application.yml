@@ -1,0 +1,26 @@
+database: hsqldb
+logging:
+  level:
+    org:
+      springframework: INFO
+management:
+  endpoints:
+    web:
+      base-path: /manage
+      exposure:
+        include: '*'
+spring:
+  datasource:
+    data: classpath*:db/${database}/data.sql
+    schema: classpath*:db/${database}/schema.sql
+  jpa:
+    hibernate:
+      ddl-auto: none
+  messages:
+    basename: messages/messages
+  resources:
+    cache:
+      cachecontrol:
+        max-age: 12h
+  thymeleaf:
+    mode: HTML
