@@ -9,6 +9,7 @@ public class VetsRouter {
 //	public RouterFunction<ServerResponse> route(VetsHandler vetsHandler) {
 //
 //		return RouterFunctions
-//			.route(RequestPredicates.GET("/vets").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), vetsHandler::vets);
+//			.route(RequestPredicates.GET("/vets").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), vetsHandler::vets)
+//			.andRoute(RequestPredicates.GET("/vets.html"), vetsHandler::vetsHtml);
 //	}
 }
